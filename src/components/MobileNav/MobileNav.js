@@ -8,10 +8,10 @@ export default function MobileNav({ isOpen, toggelMenu }) {
                 <div className="toggel-menu-container">
                     <img src={logo} alt="" className="logo" />
                     <ul>
-                        <li><a href="#" className="menu-item">Home</a></li>
-                        <li><a href="#" className="menu-item">Skills</a></li>
-                        <li><a href="#" className="menu-item">Work Experience</a></li>
-                        <li><a href="#" className="menu-item">Connnects</a></li>
+                        <li><a href="/" className="menu-item">Home</a></li>
+                        <li><a href="/" className="menu-item">Skills</a></li>
+                        <li><a href="/" className="menu-item">Work Experience</a></li>
+                        <li><a href="/" className="menu-item">Connnects</a></li>
                         <button className="contact-btn" onClick={()=>{}}>
                             Hire Me
                         </button>
