@@ -1,0 +1,157 @@
+.hero-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.hero-container::after,
+.hero-container::before{
+    content: " ";
+    width: 28.12rem;
+    height: 28.12rem;
+    border-radius: 28.12rem;
+    background: #7c66e3;
+    position: absolute;
+    z-index: -1;
+    filter: blur(125px);
+}
+.hero-container::after{
+    top: -3rem;
+    left: -5rem;
+}
+.hero-container::before{
+    bottom: 2rem;
+    right: 0rem;
+}
+.hero-content{
+    flex: 1;
+}
+.hero-content h2{
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    word-spacing: 10px;
+}
+.hero-img{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.hero-img  > div{
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.hero-img  > div > img{
+    width: 25rem;
+    transition: all 0.3s ease;
+}
+.tec-icon{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.65rem;
+    border: 0.2rem solid #6852ba;
+}
+ .tec-icon .img{
+    width: 3rem;
+    height: auto;
+    transition: all 0.3s ease;
+} 
+.hero-img > div > img:hover,
+.tec-icon .img:hover{
+    transform: translateY(-0.5rem);
+}
+
+@media(max-width:1025px){
+    .hero-container h2{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        margin-left: 2rem;
+
+    }
+    .hero-container p{
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        margin-left: 2rem;
+    }
+    .hero-img > div >img{
+        width: 20rem;
+
+    }
+    .tec-icon{
+        width: 4rem;
+        height: 4rem;
+    }
+    .tec-icon img{
+        width: 2.5rem;
+    }
+}
+@media(max-width:768px){
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-img{
+        margin: 2rem 0 2rem 0;
+    }
+    .hero-container h2,.hero-container p{
+        width: auto;
+        text-align: center;
+    }
+    .hero-container::after,
+    .hero-container::before{
+        content: "";
+        width: 18rem;
+        height: 18rem;
+    }
+    .hero-container::after{
+        top: 0rem;
+        left: 0rem;
+
+    }
+    .hero-container::before{
+        bottom: 2rem;
+        right: 0rem;
+    }
+
+}
+@media(max-width:600px){
+    .hero-content{
+        margin-right:8px;
+    }
+    .hero-content h2{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .hero-content p {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+      }
+    .hero-img{ 
+        gap: 1rem;
+
+    }
+    .hero-img > div {
+        gap: 1rem;
+    }
+    .hero-img > div > img {
+        width: 16rem;
+    }
+    .tec-icon{
+        width: 3.3rem;
+        height: 3.3rem;
+        border: 2px solid #6852ba;
+    }
+    .tec-icon img{
+        width: 2rem;
+    }
+}
