@@ -88,7 +88,7 @@ export const PROJECTS = [
             
           ],
         button: {
-            link: "https://my-e-commerce-bimgiea7v-sekhar-ghoshs-projects.vercel.app/"
+            link: "https://my-e-commerce-seven.vercel.app/"
         },
     },
     {
