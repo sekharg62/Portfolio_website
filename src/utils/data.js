@@ -13,7 +13,7 @@ export const SKILLS = [
             { skill: "CSS3", percentage: "50%" },
             { skill: "JavaScript", percentage: "80%" },
             { skill: "React.js", percentage: "70%" },
-            { skill: "Next.js", percentage: "50%" },
+            { skill: "Next.js", percentage: "55%" },
         ],
     },
 
@@ -22,8 +22,8 @@ export const SKILLS = [
        Icon: BsDatabase,
         skills: [
             { skill: "PHP", percentage: "70%" },
-            { skill: "Node.js", percentage: "30%" },
-            { skill: "Express.js", percentage: "40%" },
+            { skill: "Node.js", percentage: "70%" },
+            { skill: "Express.js", percentage: "60%" },
         ],
     },
     {
@@ -40,15 +40,15 @@ export const SKILLS = [
         Icon: BsDatabase,
         skills: [
             { skill: "MySQL", percentage: "50%" },
-            { skill: "MongoDB", percentage: "28%" },
+            { skill: "MongoDB", percentage: "40%" },
         ],
     },
     {
         title: "Soft Skills",
         Icon: GiSkills,
         skills: [
-            { skill: "Problem Solving", percentage: "50%" },
-            { skill: "English-Speaking", percentage: "50%" },
+            { skill: "Problem Solving", percentage: "60%" },
+            { skill: "English-Speaking", percentage: "60%" },
             { skill: "Collaboration", percentage: "80%" },
         ],
     },
@@ -79,7 +79,7 @@ export const PROJECTS = [
         },
     },
     {
-        title: "1. E-Commerce",
+        title: "2. E-Commerce",
         date: "February 2024",
         description:  [
             "A responsive e-commerce frontend built using React.",
@@ -88,20 +88,49 @@ export const PROJECTS = [
             
           ],
         button: {
-            link: "https://sekharg62.github.io/my-e-commerce"
+            link: "https://my-e-commerce-bimgiea7v-sekhar-ghoshs-projects.vercel.app/"
         },
     },
     {
-        title: "2. Social Media",
-        date: "April 2024",
+        title: "3. Social Media",
+        date: "August 2024",
         description:[
             "A comprehensive social media platform which is  currently under development.",
-            "Built with a modern tech stack including React for the frontend and Node.js/Express for the backend.",
-            "Features include user authentication, profile management, and real-time messaging.",
+            "Currently it is only post page for mobile screen",
+            "Built with a modern tech stack including NEXT for the frontend ",
+            "Features will include user authentication, profile management, and real-time messaging.",
             
           ],
         button: {
-            link: "https://github.com/sekharg62/social-media-app"
+            link: "https://third-zone-ym8u.vercel.app/"
+        },
+    },
+    {
+        title: "4. Blog-site",
+        date: "August 2024",
+        description:[
+            "A comprehensive blog platform which is  currently under development.",
+            "Making using NEXT.js,MONGODB,EXPRESS and NODE.js",
+            "Authentication using google,github and mannual features available,",
+            "Fully responsive this project and dark and light theme available.",
+            
+          ],
+        button: {
+            link: "https://next-blog-ruby-three.vercel.app/"
+        },
+    },
+    {
+        title: "5. 3D-Porfolio",
+        date: "July 2024",
+        description:[
+            "A comprehensive 3D-Porfolio platform .",
+            "Making using NEXT.js",
+            "Use here three.js and map.js,",
+            
+            
+          ],
+        button: {
+            link: "https://portfolio-sekhar-ghoshs-projects.vercel.app/"
         },
     }
 ]
