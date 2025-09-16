@@ -41,7 +41,9 @@
     grid-template-columns: repeat(2,1fr);
 }
 .skills-info{
+   
     flex: 1;
+   
 }
 @media(max-width:1025px){
     

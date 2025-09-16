@@ -5,66 +5,77 @@ import { HiTv } from "react-icons/hi2";
 import { VscTools } from "react-icons/vsc";
 import { GiSkills } from "react-icons/gi";
 export const SKILLS = [
-    {
-        title: "Frontend",
-        Icon:ImDisplay,
-        skills: [
-            { skill: "HTML5", percentage: "80%" },
-            { skill: "CSS3", percentage: "50%" },
-            { skill: "JavaScript", percentage: "80%" },
-            { skill: "React.js", percentage: "70%" },
-            { skill: "Next.js", percentage: "55%" },
-        ],
-    },
+  {
+    title: "Frontend Development",
+    Icon: ImDisplay,
+    skills: [
+      { skill: "HTML5, CSS3, Tailwind CSS", percentage: "85%" },
+      { skill: "JavaScript, TypeScript", percentage: "80%" },
+      { skill: "React.js", percentage: "75%" },
+      { skill: "React Native", percentage: "40%" },
+      { skill: "Next.js (SSR, SSG)", percentage: "55%" },
+      { skill: "Zustand (State Management)", percentage: "60%" },
+      { skill: "Material UI (MUI)", percentage: "60%" },
+    ],
+  },
 
-    {
-        title: "Backend",
-       Icon: BsDatabase,
-        skills: [
-            { skill: "PHP", percentage: "70%" },
-            { skill: "Node.js", percentage: "70%" },
-            { skill: "Express.js", percentage: "60%" },
-        ],
-    },
-    {
-        title: "Tools",
-        Icon: VscTools,
-        skills: [
-            { skill: "Git & GitHub", percentage: "70%" },
-            { skill: "PostMan", percentage: "60%" },
-            { skill: "Responsive Design", percentage: "70%" },
-        ],
-    },
-    {
-        title: "Database",
-        Icon: BsDatabase,
-        skills: [
-            { skill: "MySQL", percentage: "50%" },
-            { skill: "MongoDB", percentage: "40%" },
-        ],
-    },
-    {
-        title: "Soft Skills",
-        Icon: GiSkills,
-        skills: [
-            { skill: "Problem Solving", percentage: "60%" },
-            { skill: "English-Speaking", percentage: "60%" },
-            { skill: "Collaboration", percentage: "80%" },
-        ],
-    },
-    {
-        title: "Technical Skills",
-        Icon: HiTv,
-        skills: [
-            { skill: "C/C++", percentage: "80%" },
-            { skill: "Java", percentage: "75%" },
-            { skill: "Python", percentage: "20%" },
-        ],
-    },
+  {
+    title: "Backend Development",
+    Icon: BsDatabase,
+    skills: [
+      { skill: "Node.js", percentage: "70%" },
+      { skill: "Express.js", percentage: "60%" },
+      { skill: "PostgreSQL", percentage: "60%" },
+      { skill: "MongoDB", percentage: "50%" },
+      { skill: "MySQL", percentage: "50%" },
+      { skill: "Supabase (Realtime Database)", percentage: "40%" },
+    ],
+  },
 
+  {
+    title: "Cloud & Tools",
+    Icon: VscTools,
+    skills: [
+      { skill: "AWS (Basic)", percentage: "50%" },
+      { skill: "Git & GitHub", percentage: "70%" },
+      { skill: "Postman (API Testing)", percentage: "65%" },
+      { skill: "Docker (Containerization)", percentage: "40%" },
+    ],
+  },
 
+  {
+    title: "Programming Languages",
+    Icon: HiTv,
+    skills: [
+      { skill: "C, C++", percentage: "80%" },
+      { skill: "Java", percentage: "75%" },
+      { skill: "Python", percentage: "25%" },
+      { skill: "HTML, CSS", percentage: "85%" },
+      { skill: "JavaScript, TypeScript", percentage: "80%" },
+    ],
+  },
 
+  {
+    title: "Soft Skills",
+    Icon: GiSkills,
+    skills: [
+      { skill: "Problem Solving", percentage: "60%" },
+      { skill: "Time Management", percentage: "65%" },
+      { skill: "Interpersonal Communication", percentage: "60%" },
+      { skill: "Adaptability", percentage: "70%" },
+    ],
+  },
 
+  {
+    title: "Professional Skills",
+    Icon: GiSkills,
+    skills: [
+      { skill: "Team Collaboration", percentage: "80%" },
+      { skill: "English Communication", percentage: "60%" },
+      { skill: "Adaptability", percentage: "70%" },
+      { skill: "Problem Solving", percentage: "60%" },
+    ],
+  },
 ];
 export const PROJECTS = [
     {
@@ -133,4 +144,36 @@ export const PROJECTS = [
             link: "https://portfolio-sekhar-ghoshs-projects.vercel.app/"
         },
     }
+]
+export const EXPERIENCE = [
+  {
+    "company": "Statmagic Sports LLP",
+    "position": "Software Engineer Intern",
+    "duration": "Aug 2025 - Present",
+    "location": "Onsite – Bangalore, India",
+    "responsibilities": [
+      "Launched Player Nation, a football player statistics platform delivering real-time data to 500+ users daily with 40% faster load times by optimizing API queries and caching in NestJS.",
+      "Built cross-platform features with React (web) and React Native (mobile), increasing mobile adoption by 30% in the first month."
+    ]
+  },
+  {
+    "company": "Infomaticae Technologies Pvt. Ltd.",
+    "position": "Software Developer Intern",
+    "duration": "May 2025 - Jul 2025",
+    "location": "Remote – West Bengal, India",
+    "responsibilities": [
+      "Architected and deployed a scalable ERP solution using React.js for H.K. Exports, reducing manual reporting time by 40%."
+    ]
+  },
+  {
+    "company": "Meliodus Software Solutions Pvt. Ltd.",
+    "position": "Junior Software Developer",
+    "duration": "Oct 2024 - Apr 2025",
+    "location": "Remote – West Bengal, India",
+    "responsibilities": [
+      "Contributed to the development of a psychometric testing platform used by 3,000+ candidates.",
+      "Tech Stack: React.js, ShadCN, Tailwind CSS, Zod, and SSG.",
+      "Deployed project: 1stcollege.com/psychometric"
+    ]
+  }
 ]
