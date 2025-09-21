@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="hero-content">
                 <h2>Think Make &
                 Solve.</h2>
-                <p>Hello! I'm <b>Sekhar Ghosh</b>, a passionate and dedicated Full Stack Developer currently in my final year of Computer Science Engineering. With a strong foundation in both front-end and back-end technologies, I thrive on creating seamless, efficient, and visually appealing web applications. My journey in the tech world has been driven by a love for coding, problem-solving, and continuously learning new skills.
+                <p>Hello! I'm <b>Sekhar Ghosh</b>, a passionate and dedicated Full Stack Developer. Having recently graduated in Computer Science Engineering, I am currently working on building scalable and efficient web and mobile applications. With a strong foundation in both front-end and back-end technologies, I thrive on creating seamless, visually appealing, and high-performing solutions. My journey in tech continues to be driven by coding, problem-solving, and continuously learning new skills.
                 </p>
             </div>
             <div className="hero-img">
