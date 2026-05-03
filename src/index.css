@@ -1,11 +1,88 @@
-@import url("https://fonsts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-*{
-  font-family: "Poppins",sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-} 
+@import "tailwindcss";
+@config "../tailwind.config.js";
 
-body{
-  color: #fff;
-  background-color: #060417;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-slate-800 bg-white antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+  ::selection {
+    @apply bg-teal-500 text-white;
+  }
+}
+
+@layer components {
+  /* Container */
+  .container-xl {
+    @apply max-w-7xl mx-auto px-6 lg:px-10;
+  }
+
+  /* Section wrapper */
+  .section-wrap {
+    @apply py-24 md:py-32;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold text-sm transition-all duration-300 active:scale-95 disabled:opacity-50 disabled:pointer-events-none tracking-wide;
+  }
+  .btn-primary {
+    @apply bg-teal-600 text-white hover:bg-teal-500 shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 px-6 py-3;
+  }
+  .btn-secondary {
+    @apply bg-white text-slate-800 hover:text-teal-600 border border-slate-200 hover:border-teal-300 shadow-sm hover:shadow-md px-6 py-3;
+  }
+  .btn-outline {
+    @apply border-2 border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white px-6 py-3;
+  }
+  .btn-ghost {
+    @apply text-slate-600 hover:text-teal-600 hover:bg-slate-100 px-4 py-2;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-full;
+  }
+  .badge-primary {
+    @apply bg-teal-50 text-teal-700 border border-teal-100;
+  }
+  .badge-slate {
+    @apply bg-slate-100 text-slate-600 border border-slate-200;
+  }
+
+  /* Card */
+  .card {
+    @apply bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 lg:p-8;
+  }
+
+  /* Divider accent */
+  .section-divider {
+    @apply w-16 h-1 bg-teal-500 rounded-full;
+  }
+
+  /* Nav link */
+  .nav-link {
+    @apply text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors duration-200;
+  }
+  .nav-link-active {
+    @apply text-slate-900;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-500;
+  }
+
+  /* Progress bar */
+  .progress-track {
+    @apply w-full h-1.5 bg-slate-100 rounded-full overflow-hidden;
+  }
+  .progress-bar {
+    @apply h-full bg-gradient-to-r from-teal-500 to-cyan-400 rounded-full;
+  }
 }
