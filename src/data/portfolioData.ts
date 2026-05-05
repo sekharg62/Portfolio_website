@@ -156,13 +156,13 @@ export const EXPERIENCE = [
   {
     company: "Infomaticae Technologies Pvt. Ltd.",
     position: "Junior Software Developer",
-    duration: "May 2025 - Jul 2025",
+    duration: "Oct 2025 - Jul 2025",
     location: "Remote – West Bengal, India",
     responsibilities: [
       "Architected and deployed a scalable ERP solution using React.js for H.K. Exports, reducing manual reporting time by 40%."
     ]
   },
-  {
+  /* {
     company: "Meliodus Software Solutions Pvt. Ltd.",
     position: "Frontend Developer",
     duration: "Oct 2024 - Apr 2025",
@@ -172,7 +172,7 @@ export const EXPERIENCE = [
       "Tech Stack: React.js, ShadCN, Tailwind CSS, Zod, and SSG.",
       "Deployed project: 1stcollege.com/psychometric"
     ]
-  }
+  } */
 ];
 
 export const CLIENT_PROJECTS = [
@@ -184,10 +184,10 @@ export const CLIENT_PROJECTS = [
       "A full-stack digital marketplace for the Bangladeshi market offering 100+ premium subscriptions (Netflix, ChatGPT, CapCut, Adobe CC, VPN) in one place. Features bilingual Bengali/English UI, light/dark theme, real-time order tracking, local payment methods (bKash, Nagad, Rocket), live customer support chat, and a curated product catalogue across 10+ categories.",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
     link: "https://digitalaccessda.com",
-    year: "2025",
+    year: "2026",
     highlight: "3,283+ happy customers · 200+ daily orders",
   },
-  {
+ /*  {
     client: "1stCollege.com",
     title: "Psychometric Career Assessment Platform",
     category: "EdTech Platform",
@@ -208,5 +208,5 @@ export const CLIENT_PROJECTS = [
     link: "https://hkexports-demo.vercel.app/",
     year: "2025",
     highlight: "40% reduction in reporting time",
-  },
+  }, */
 ];

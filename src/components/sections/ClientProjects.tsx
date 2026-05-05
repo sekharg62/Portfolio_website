@@ -27,6 +27,8 @@ const itemVariants: Variants = {
 };
 
 export function ClientProjects() {
+  const singleProject = CLIENT_PROJECTS.length === 1;
+
   return (
     <section id="client-work" className="section-wrap">
       <div className="container-xl">
@@ -41,14 +43,20 @@ export function ClientProjects() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: '-60px' }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-7"
+          className={
+            singleProject
+              ? 'flex justify-center'
+              : 'grid grid-cols-1 lg:grid-cols-3 gap-7'
+          }
         >
           {CLIENT_PROJECTS.map((project, idx) => {
             return (
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className="relative bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300"
+                className={`relative bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 ${
+                  singleProject ? 'w-full max-w-lg' : ''
+                }`}
               >
                 {/* Gradient header */}
                 <div
