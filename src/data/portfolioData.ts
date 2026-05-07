@@ -156,7 +156,7 @@ export const EXPERIENCE = [
   {
     company: "Infomaticae Technologies Pvt. Ltd.",
     position: "Junior Software Developer",
-    duration: "Oct 2025 - Jul 2025",
+    duration: "Oct 2024- Jul 2025",
     location: "Remote – West Bengal, India",
     responsibilities: [
       "Architected and deployed a scalable ERP solution using React.js for H.K. Exports, reducing manual reporting time by 40%."
