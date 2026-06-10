@@ -11,10 +11,10 @@ const FOOTER_LINKS = [
 
 export function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400">
+    <footer className="bg-slate-900 text-slate-400 dark:bg-slate-950">
       <div className="container-xl">
         {/* Top */}
-        <div className="py-14 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-slate-800">
+        <div className="py-14 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-slate-800 dark:border-slate-800">
           {/* Brand */}
           <div>
             <a href="#home" className="text-2xl font-display font-bold text-white tracking-tight mb-3 inline-block">

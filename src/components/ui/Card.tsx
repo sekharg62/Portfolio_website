@@ -15,8 +15,8 @@ export function Card({ children, className, glass = false, hover = false, ...pro
       className={cn(
         "rounded-2xl border p-6 md:p-8",
         {
-          "bg-white/70 backdrop-blur-md border-white/20 shadow-xl": glass,
-          "bg-white border-slate-100 shadow-sm": !glass,
+          "bg-white/70 backdrop-blur-md border-white/20 shadow-xl dark:bg-slate-900/70 dark:border-slate-700/50": glass,
+          "bg-white border-slate-100 shadow-sm dark:bg-slate-900 dark:border-slate-800": !glass,
           "hover:shadow-lg transition-shadow duration-300": hover,
         },
         className

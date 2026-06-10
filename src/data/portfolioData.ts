@@ -3,7 +3,6 @@ import {
   Database,
   Wrench,
   Code2,
-  Lightbulb,
   Users
 } from 'lucide-react';
 
@@ -20,70 +19,67 @@ export const HERO_DATA = {
 
 export const SKILLS = [
   {
-    title: "Frontend Development",
+    title: "Frontend",
+    description: "Interfaces that are fast, accessible, and polished.",
     icon: Monitor,
     skills: [
-      { skill: "HTML5, CSS3, Tailwind CSS", percentage: "85%" },
-      { skill: "JavaScript, TypeScript", percentage: "80%" },
-      { skill: "React.js", percentage: "75%" },
-      { skill: "React Native", percentage: "40%" },
-      { skill: "Next.js (SSR, SSG)", percentage: "55%" },
-      { skill: "Zustand (State Management)", percentage: "60%" },
-      { skill: "Material UI (MUI)", percentage: "60%" },
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Material UI",
+      "React Native",
+      "Zustand",
     ],
   },
   {
-    title: "Backend Development",
+    title: "Backend",
+    description: "Reliable APIs, services, and data layers.",
     icon: Database,
     skills: [
-      { skill: "Node.js", percentage: "70%" },
-      { skill: "Express.js", percentage: "60%" },
-      {skill:"Nest.js",percentage:"75%"},
-      { skill: "PostgreSQL", percentage: "60%" },
-      { skill: "MongoDB", percentage: "50%" },
-      { skill: "MySQL", percentage: "50%" },
-      { skill: "Supabase", percentage: "40%" },
+      "Node.js",
+      "Nest.js",
+      "Express.js",
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Supabase",
     ],
   },
   {
-    title: "Cloud & Tools",
+    title: "DevOps & Tools",
+    description: "Shipping, testing, and maintaining production systems.",
     icon: Wrench,
     skills: [
-      { skill: "AWS (Basic)", percentage: "50%" },
-      { skill: "Git & GitHub", percentage: "70%" },
-      { skill: "Postman (API Testing)", percentage: "65%" },
-      { skill: "Docker", percentage: "40%" },
+      "Git & GitHub",
+      "Docker",
+      "AWS",
+      "Postman",
     ],
   },
   {
-    title: "Programming Languages",
+    title: "Languages",
+    description: "Strong foundations across systems and application code.",
     icon: Code2,
     skills: [
-      { skill: "C, C++", percentage: "80%" },
-      { skill: "Java", percentage: "75%" },
-      { skill: "Python", percentage: "25%" },
-      { skill: "HTML, CSS", percentage: "85%" },
-      { skill: "JavaScript, TypeScript", percentage: "80%" },
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "C / C++",
+      "Python",
     ],
   },
   {
-    title: "Soft Skills",
-    icon: Lightbulb,
-    skills: [
-      { skill: "Problem Solving", percentage: "60%" },
-      { skill: "Time Management", percentage: "65%" },
-      { skill: "Communication", percentage: "60%" },
-      { skill: "Adaptability", percentage: "70%" },
-    ],
-  },
-  {
-    title: "Professional Skills",
+    title: "How I Work",
+    description: "Collaboration and delivery beyond the codebase.",
     icon: Users,
     skills: [
-      { skill: "Team Collaboration", percentage: "80%" },
-      { skill: "English Communication", percentage: "60%" },
-      { skill: "Adaptability", percentage: "70%" },
-      { skill: "Problem Solving", percentage: "60%" },
+      "Team Collaboration",
+      "Problem Solving",
+      "Communication",
+      "Time Management",
+      "Adaptability",
     ],
   },
 ];
@@ -107,9 +103,9 @@ export const PROJECTS = [
       "Features a dynamic shopping cart for adding and managing products.",
       "Users can browse a variety of products with ease."
     ],
-    link: "https://my-e-commerce-seven.vercel.app/"
+    link: "https://noorjahan-bd.netlify.app/"
   },
-  {
+ /*  {
     title: "Social Media",
     date: "August 2024",
     description: [
@@ -119,8 +115,8 @@ export const PROJECTS = [
       "Features will include user authentication, profile management, and real-time messaging."
     ],
     link: "https://third-zone-ym8u.vercel.app/"
-  },
-  {
+  }, */
+  /* {
     title: "Blog-site",
     date: "August 2024",
     description: [
@@ -130,7 +126,7 @@ export const PROJECTS = [
       "Fully responsive this project and dark and light theme available."
     ],
     link: "https://next-blog-ruby-three.vercel.app/"
-  },
+  }, */
   {
     title: "3D-Portfolio",
     date: "July 2024",

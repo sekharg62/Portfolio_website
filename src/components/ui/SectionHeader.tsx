@@ -18,7 +18,7 @@ export function SectionHeader({ label, title, subtitle, align = 'center' }: Sect
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="text-teal-600 text-sm font-bold uppercase tracking-[0.15em] mb-3"
+          className="text-teal-600 text-sm font-bold uppercase tracking-[0.15em] mb-3 dark:text-teal-400"
         >
           {label}
         </motion.p>
@@ -28,7 +28,7 @@ export function SectionHeader({ label, title, subtitle, align = 'center' }: Sect
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="text-3xl md:text-4xl font-display font-bold text-slate-900 leading-tight mb-4"
+        className="text-3xl md:text-4xl font-display font-bold text-slate-900 dark:text-slate-100 leading-tight mb-4"
       >
         {title}
       </motion.h2>
@@ -38,7 +38,7 @@ export function SectionHeader({ label, title, subtitle, align = 'center' }: Sect
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className={`text-slate-500 text-lg leading-relaxed ${isCenter ? 'max-w-2xl mx-auto' : 'max-w-xl'}`}
+          className={`text-slate-500 dark:text-slate-400 text-lg leading-relaxed ${isCenter ? 'max-w-2xl mx-auto' : 'max-w-xl'}`}
         >
           {subtitle}
         </motion.p>

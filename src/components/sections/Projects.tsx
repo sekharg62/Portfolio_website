@@ -15,7 +15,7 @@ const itemVariants = {
 
 export function Projects() {
   return (
-    <section id="projects" className="section-wrap bg-slate-50/60">
+    <section id="projects" className="section-wrap section-muted">
       <div className="container-xl">
         <SectionHeader
           label="Portfolio"
@@ -34,7 +34,7 @@ export function Projects() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm overflow-hidden group hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col dark:hover:shadow-black/30"
             >
               {/* Top gradient bar */}
               <div className="h-1.5 bg-gradient-to-r from-teal-400 to-cyan-400" />
@@ -47,11 +47,11 @@ export function Projects() {
                     <span className="badge badge-primary text-xs mb-2 block w-fit">
                       {project.date}
                     </span>
-                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-teal-700 transition-colors leading-tight">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors leading-tight">
                       {project.title}
                     </h3>
                   </div>
-                  <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-teal-50 group-hover:border-teal-100 group-hover:text-teal-600 transition-all duration-300 shrink-0 ml-3">
+                  <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-teal-50 group-hover:border-teal-100 group-hover:text-teal-600 transition-all duration-300 shrink-0 ml-3 dark:bg-slate-800 dark:border-slate-700 dark:group-hover:bg-teal-950/50 dark:group-hover:border-teal-800 dark:group-hover:text-teal-400">
                     <ExternalLink size={16} />
                   </div>
                 </div>
@@ -59,7 +59,7 @@ export function Projects() {
                 {/* Description */}
                 <ul className="space-y-2 flex-1 mb-6">
                   {project.description.map((d, i) => (
-                    <li key={i} className="text-sm text-slate-500 leading-relaxed flex items-start gap-2">
+                    <li key={i} className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed flex items-start gap-2">
                       <span className="text-teal-400 mt-1 shrink-0">▸</span>
                       {d}
                     </li>
@@ -67,12 +67,12 @@ export function Projects() {
                 </ul>
 
                 {/* Footer */}
-                <div className="pt-5 border-t border-slate-100 flex items-center justify-between">
+                <div className="pt-5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-600 hover:text-teal-700 group/link transition-colors"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-600 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 group/link transition-colors"
                   >
                     Live Demo
                     <ArrowUpRight size={15} className="transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
@@ -82,7 +82,7 @@ export function Projects() {
                     href="https://github.com/sekharg62"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:border-slate-900 hover:text-slate-900 transition-colors"
+                    className="w-8 h-8 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-400 hover:border-slate-900 hover:text-slate-900 dark:hover:border-slate-300 dark:hover:text-slate-100 transition-colors"
                     aria-label="GitHub"
                   >
                     <FaGithub size={15} />

@@ -54,7 +54,7 @@ export function ClientProjects() {
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className={`relative bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 ${
+                className={`relative bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 dark:hover:shadow-black/30 ${
                   singleProject ? 'w-full max-w-lg' : ''
                 }`}
               >
@@ -87,18 +87,18 @@ export function ClientProjects() {
 
                 {/* Body */}
                 <div className="p-7 flex flex-col flex-1">
-                  <h3 className="text-lg font-bold text-slate-900 mb-3 leading-snug group-hover:text-teal-700 transition-colors">
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-3 leading-snug group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors">
                     {project.title}
                   </h3>
 
-                  <p className="text-sm text-slate-500 leading-relaxed mb-5 flex-1">
+                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-5 flex-1">
                     {project.description}
                   </p>
 
                   {/* Highlight stat */}
-                  <div className="flex items-center gap-2 mb-5 px-3 py-2.5 bg-slate-50 rounded-xl border border-slate-100">
+                  <div className="flex items-center gap-2 mb-5 px-3 py-2.5 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-100 dark:border-slate-700">
                     <Star size={13} className="text-amber-400 fill-amber-400 shrink-0" />
-                    <span className="text-xs font-semibold text-slate-600">
+                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-300">
                       {project.highlight}
                     </span>
                   </div>
